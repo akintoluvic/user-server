@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // descriptiostate (to userid
 
-const UserSchema = new mongoose.Schema({
+const SingleUserSchema = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
@@ -14,4 +14,4 @@ const UserSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('SingleUser', SingleUserSchema)
